@@ -1,20 +1,8 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger.js";
-import Lenis from "@studio-freight/lenis";
 
 /* register gsap plugins */
 gsap.registerPlugin(ScrollTrigger);
-
-/* Init Lenis */
-const lenis = new Lenis({
-  duration: 1.5,
-});
-lenis.on("scroll", ScrollTrigger.update);
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-requestAnimationFrame(raf);
 
 /* Create stable  grid stagger */
 const stableGridStagger = () => {
@@ -29,20 +17,49 @@ const stableGridStagger = () => {
 stableGridStagger();
 
 /* Gsap animations list */
-gsap.fromTo(
-  ".stagger",
-  {
-    y: 90,
+const activeAnimations = ["g-stagger", "g-zoom-out"];
+const animations = {
+  "g-stagger": c => {
+    gsap.fromTo(
+      `.${c}`,
+      {
+        y: 90,
+      },
+      {
+        y: 0,
+        stagger: 0.3,
+        delay: 0.6,
+        scrollTrigger: {
+          trigger: `.${c}`,
+          start: "top bottom",
+          end: "bottom 20%",
+          scrub: true,
+        },
+      },
+    );
   },
-  {
-    y: 0,
-    stagger: 0.3,
-    delay: 0.6,
-    scrollTrigger: {
-      trigger: ".stagger",
-      start: "top bottom",
-      end: "bottom 20%",
-      scrub: true,
-    },
+  "g-zoom-out": c => {
+    const els = gsap.utils.toArray(`.${c}`);
+    els.forEach(el => {
+      gsap.fromTo(
+        el,
+        {
+          scale: 1.15,
+        },
+        {
+          scale: 1,
+          scrollTrigger: {
+            trigger: el,
+            start: "top bottom",
+            end: "bottom 20%",
+            scrub: true,
+          },
+        },
+      );
+    });
   },
-);
+};
+
+activeAnimations.forEach(animation => {
+  animations[animation](animation);
+});
