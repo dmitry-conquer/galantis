@@ -21,6 +21,7 @@
     "del": "^7.0.0",
     "eslint": "^8.56.0",
     "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-webpack-plugin": "^4.0.1",
     "gulp": "^4.0.2",
@@ -30,6 +31,7 @@
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^8.0.0",
     "gulp-newer": "^1.4.0",
+    "gulp-postcss": "^9.0.1",
     "gulp-rename": "^2.0.0",
     "gulp-replace": "^1.1.4",
     "gulp-sass": "^5.1.0",
@@ -46,16 +48,16 @@
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.9",
     "sass": "^1.62.1",
-    "swiper": "=8.4.7",
+    "tailwindcss": "^3.4.0",
+    "terser-webpack-plugin": "^5.3.9",
     "vinyl-ftp": "^0.6.1",
     "webpack": "^5.83.1",
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "eslint-config-prettier": "^9.1.0",
-    "gulp-postcss": "^9.0.1",
+    "@studio-freight/lenis": "^1.0.42",
+    "gsap": "^3.12.5",
     "micromodal": "^0.4.10",
-    "tailwindcss": "^3.4.0",
-    "terser-webpack-plugin": "^5.3.9"
+    "swiper": "=8.4.7"
   }
 }

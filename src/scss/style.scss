@@ -1,17 +1,20 @@
-// @import '../../node_modules/swiper/swiper.scss';
+@import "../../node_modules/swiper/swiper.scss";
 // @import '../../node_modules/swiper/modules/navigation/navigation.scss';
-// @import '../../node_modules/swiper/modules/autoplay/autoplay.scss';
-// @import '../../node_modules/swiper/modules/pagination/pagination.scss';
 // @import '../../node_modules/aos/src/sass/aos.scss';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import 'fonts';
-
+@import "fonts";
 
 @layer utilities {
-  .gr-gold {
+  .bg-gold {
     background: linear-gradient(90deg, #dea035 0%, #f5cf77 100%);
+  }
+  .text-gold {
+    background: linear-gradient(90deg, #dea035 0%, #f5cf77 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

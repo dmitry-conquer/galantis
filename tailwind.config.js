@@ -5,7 +5,12 @@ module.exports = {
       center: true,
       padding: "16px",
     },
-
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1212px",
+    },
     extend: {
       fontSize: {
         sm: "0.8rem", // 12.5
@@ -20,8 +25,8 @@ module.exports = {
       },
       colors: {
         grayLight: "#303030",
-        gray: "#141414",
-        grayDark: "#191919",
+        gray: "#191919",
+        grayDark: "#141414",
       },
     },
     fontFamily: {
