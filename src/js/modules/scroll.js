@@ -20,23 +20,25 @@ stableGridStagger();
 const activeAnimations = ["g-stagger", "g-zoom-out"];
 const animations = {
   "g-stagger": c => {
-    gsap.fromTo(
-      `.${c}`,
-      {
-        y: 90,
-      },
-      {
-        y: 0,
-        stagger: 0.3,
-        delay: 0.6,
-        scrollTrigger: {
-          trigger: `.${c}`,
-          start: "top bottom",
-          end: "bottom 20%",
-          scrub: true,
+    if (document.querySelector(`.${c}`)) {
+      gsap.fromTo(
+        `.${c}`,
+        {
+          y: 90,
         },
-      },
-    );
+        {
+          y: 0,
+          stagger: 0.3,
+          delay: 0.6,
+          scrollTrigger: {
+            trigger: `.${c}`,
+            start: "top bottom",
+            end: "bottom 20%",
+            scrub: true,
+          },
+        },
+      );
+    }
   },
   "g-zoom-out": c => {
     const els = gsap.utils.toArray(`.${c}`);
