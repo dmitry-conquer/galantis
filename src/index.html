@@ -6,10 +6,13 @@
       @@include('components/header.html', { })
       <main class="grow">
         <!-- hero -->
-        <section class="relative px-0 pb-10">
-          <div class="mx-auto max-w-[1734px]">
+        <section class="relative px-0 pb-14 lg:mt-7 lg:h-screen">
+          <div class="mx-auto flex max-w-[1734px] flex-col lg:h-full">
             <div class="absolute left-0 top-0 hidden h-1/2 w-full bg-grayDark md:block"></div>
-            <div data-titles="CUSTOM CLOSEST,GARAGES,OFFICES,ENTERTAINMENT CENTERS,CEILING" class="hero-slider w-full overflow-hidden max-sm:h-[200px]">
+            <div data-titles="CUSTOM CLOSEST,GARAGES,OFFICES,ENTERTAINMENT CENTERS,CEILING" class="hero-slider relative h-full w-full overflow-hidden max-sm:h-[200px]">
+              <div  class="bg-gold absolute bottom-0 left-0 z-10 w-full py-2 md:py-3">
+                <p class="hs-current mb-1 text-center font-contax text-xl sm:text-2xl md:text-3xl uppercase !leading-tight text-black ">ENTERTAINMENT CENTERS</p>
+              </div>
               <div class="hero-slider-wrapper flex h-full w-full">
                 <div class="hero-slide shrink-0"><img src="./img/hs1.webp" alt="" class="size-full object-cover" /></div>
                 <div class="hero-slide shrink-0"><img src="./img/hs2.webp" alt="" class="size-full object-cover" /></div>
@@ -20,8 +23,10 @@
             </div>
             <div class="mt-4 flex flex-col gap-y-5 max-md:flex-col-reverse sm:mt-10">
               <div class="mx-auto w-full max-w-[1200px] px-5 text-center">
-                <h1 data-aos="fade-up"   data-aos-offset="0" class="text-gold mb-3 font-contax text-3xl !leading-none sm:text-4xl lg:text-6xl">Transform Your Space with Custom Closets!</h1>
-                <p data-aos="fade-up" data-aos-delay="100"   data-aos-offset="0" class="text-lg sm:text-2xl lg:text-3xl">Discover Personalized Storage Solutions for Every Room</p>
+                <h1 data-aos="fade-up" data-aos-offset="0" class="text-gold mb-3 font-contax text-3xl !leading-none sm:text-4xl lg:text-6xl">
+                  Transform Your Space with Custom Closets!
+                </h1>
+                <p data-aos="fade-up" data-aos-delay="100" data-aos-offset="0" class="text-lg sm:text-2xl lg:text-3xl">Discover Personalized Storage Solutions for Every Room</p>
               </div>
               <div class="relative z-20 flex justify-between gap-x-[30px] px-4">
                 <button class="hs-prev group flex items-center gap-x-2.5" type="button" aria-label="Prev slide">
@@ -45,7 +50,11 @@
                 <span class="font-contax text-3xl !leading-none sm:text-4xl lg:text-5xl">Ready to transform</span> <br />
                 <span class="text-gold text-4xl font-bold uppercase !leading-none sm:text-5xl lg:text-7xl">your space?</span>
               </h2>
-              <a data-aos="fade-right" data-aos-delay="200" href="#" class="bg-gold group relative z-10 py-2 sm:py-4 flex items-center justify-center gap-x-5 px-5 duration-300 hover:shadow-lg hover:shadow-yellow-400/30 ">
+              <a
+                data-aos="fade-right"
+                data-aos-delay="200"
+                href="#"
+                class="bg-gold group relative z-10 flex items-center justify-center gap-x-5 px-5 py-2 duration-300 hover:shadow-lg hover:shadow-yellow-400/30 sm:py-4">
                 <svg class="hidden size-4 text-black duration-300 group-hover:translate-x-3 sm:block">
                   <use href="./sprites/sprite.svg#icon-arrow"></use>
                 </svg>
@@ -60,7 +69,7 @@
         <section class="py-[70px]">
           <div class="container">
             <div class="mx-auto max-w-[1000px] bg-grayDark px-8 py-7 sm:px-10 lg:px-[100px] lg:py-[60px]">
-              <h2 data-aos="fade-up"  class="mb-6 text-3xl !leading-tight md:text-4xl">Welcome to <span class="text-gold font-contax">Galantis Interior</span></h2>
+              <h2 data-aos="fade-up" class="mb-6 text-3xl !leading-tight md:text-4xl">Welcome to <span class="text-gold font-contax">Galantis Interior</span></h2>
               <p data-aos="fade-up" class="text-left text-lg !leading-tight sm:pl-[15%] sm:text-right md:text-xl">
                 Where your dream storage solutions come to life. From luxurious walk-in closets to practical garage storage, we create custom closets tailored to your unique needs
                 and style.
@@ -69,25 +78,38 @@
 
             <div class="flex flex-col lg:flex-row">
               <div class="border-y border-l border-grayLight px-8 py-10 max-lg:border-r sm:py-[60px] sm:pl-[63px] sm:pr-[48px] lg:w-1/2">
-                <h2 data-aos="fade-up"  class="text-gold mb-10 font-contax text-2xl uppercase !leading-tight sm:text-3xl">Key Features:</h2>
+                <h2 data-aos="fade-up" class="text-gold mb-10 font-contax text-2xl uppercase !leading-tight sm:text-3xl">Key Features:</h2>
                 <ul class="mb-10 space-y-6 divide-y divide-grayLight [&>*:not(:first-child)]:pt-6">
-                  <li data-aos="fade-up" data-aos-delay="100" class="flex items-start gap-x-4 text-base before:mt-2.5 before:size-[11px] before:shrink-0 before:rounded-full before:bg-white sm:text-xl">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    class="flex items-start gap-x-4 text-base before:mt-2.5 before:size-[11px] before:shrink-0 before:rounded-full before:bg-white sm:text-xl">
                     Wide Range of Custom Options: Choose from various materials, colors, and styles to match your aesthetic and budget.
                   </li>
-                  <li data-aos="fade-up" data-aos-delay="100" class="flex items-start gap-x-4 text-base before:mt-2.5 before:size-[11px] before:shrink-0 before:rounded-full before:bg-white sm:text-xl">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    class="flex items-start gap-x-4 text-base before:mt-2.5 before:size-[11px] before:shrink-0 before:rounded-full before:bg-white sm:text-xl">
                     Affordable to Premium Solutions: Whether you're looking for cost-effective options or high-end designs, we have something for everyone.
                   </li>
-                  <li data-aos="fade-up" data-aos-delay="100" class="flex items-start gap-x-4 text-base before:mt-2.5 before:size-[11px] before:shrink-0 before:rounded-full before:bg-white sm:text-xl">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    class="flex items-start gap-x-4 text-base before:mt-2.5 before:size-[11px] before:shrink-0 before:rounded-full before:bg-white sm:text-xl">
                     Expert Craftsmanship: Every closet is meticulously designed and installed by our experienced team.
                   </li>
-                  <li data-aos="fade-up" data-aos-delay="100" class="flex items-start gap-x-4 text-base before:mt-2.5 before:size-[11px] before:shrink-0 before:rounded-full before:bg-white sm:text-xl">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    class="flex items-start gap-x-4 text-base before:mt-2.5 before:size-[11px] before:shrink-0 before:rounded-full before:bg-white sm:text-xl">
                     Serving: Palm Beach County and Broward County. (From Miami to Jupiter)
                   </li>
                 </ul>
                 <a
-                data-aos="fade-up" data-aos-delay="100"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
                   href="#"
-                  class="bg-gold group relative z-10 inline-flex items-center justify-center gap-x-5 px-5  py-2 sm:py-4 duration-300 hover:shadow-lg hover:shadow-yellow-400/30 ">
+                  class="bg-gold group relative z-10 inline-flex items-center justify-center gap-x-5 px-5 py-2 duration-300 hover:shadow-lg hover:shadow-yellow-400/30 sm:py-4">
                   <svg class="hidden size-4 text-black duration-300 group-hover:translate-x-3 sm:block">
                     <use href="./sprites/sprite.svg#icon-arrow"></use>
                   </svg>
@@ -105,7 +127,7 @@
         <!-- Limited offer -->
         <section class="mb-20">
           <div class="bg-gold container py-[73px]">
-            <h2 data-aos="fade-up"  class="mb-1 text-center font-contax text-4xl uppercase !leading-tight text-black md:text-5xl">Limited offer:</h2>
+            <h2 data-aos="fade-up" class="mb-1 text-center font-contax text-4xl uppercase !leading-tight text-black md:text-5xl">Limited offer:</h2>
             <p data-aos="fade-up" data-aos-delay="50" class="mx-auto max-w-[830px] text-center text-xl !leading-tight text-black md:text-2xl">
               Make an appointment for a free measurement of your closet and receive a <strong>20% discount</strong> on installation!
             </p>
@@ -115,7 +137,7 @@
         <!-- grid -->
         <section>
           <div class="container">
-            <h2 data-aos="fade-up"  class="text-gold mb-[50px] font-contax text-3xl uppercase !leading-tight">
+            <h2 data-aos="fade-up" class="text-gold mb-[50px] font-contax text-3xl uppercase !leading-tight">
               Why Choose <br />
               Galantis Interior?
             </h2>
@@ -195,11 +217,11 @@
             </div>
           </div>
         </section>
-
+        <?php $slides = get_field('slides'); ?>
         <!-- slider -->
-        <section class="mt-44 pl-[5%] lg:mt-56">
+        <section class="mt-44 pl-[5%] max-lg:px-4 lg:mt-56">
           <div class="flex flex-col gap-x-[80px] gap-y-8 lg:flex-row">
-            <div class="shrink-0">
+            <div class="shrink-0 pb-4 lg:pb-12">
               <h2 data-aos="fade-up" class="mb-10 font-contax text-2xl uppercase !leading-tight sm:text-3xl md:text-4xl">
                 <span class="text-gold text-3xl sm:text-4xl md:text-5xl"
                   >Custom <br />
@@ -210,40 +232,16 @@
                 Room in Your Home
               </h2>
               <ul class="space-y-3 divide-y divide-grayLight [&>*:not(:first-child)]:pt-3">
-                <li data-aos="fade-up" data-aos-delay="100" class="text-lg uppercase md:text-2xl">Walk-In</li>
-                <li data-aos="fade-up" data-aos-delay="100" class="text-lg uppercase md:text-2xl">Wall Unit</li>
-                <li data-aos="fade-up" data-aos-delay="100" class="text-lg uppercase md:text-2xl">Laundry</li>
-                <li data-aos="fade-up" data-aos-delay="100" class="text-lg uppercase md:text-2xl">Garage</li>
-                <li data-aos="fade-up" data-aos-delay="100" class="text-lg uppercase md:text-2xl">Entertainment Center</li>
-                <li data-aos="fade-up" data-aos-delay="100" class="text-lg uppercase md:text-2xl">Office</li>
-                <li data-aos="fade-up" data-aos-delay="100" class="text-lg uppercase md:text-2xl">Understairs units</li>
+                <li data-aos="fade-up" data-aos-delay="100" role="button" data-image="./img/hs1.webp" class="image-trigger text-lg uppercase md:text-2xl">Walk-In</li>
+                <li data-aos="fade-up" data-aos-delay="100" role="button" data-image="./img/hs2.webp" class="image-trigger text-lg uppercase md:text-2xl">Wall Unit</li>
+                <li data-aos="fade-up" data-aos-delay="100" role="button" data-image="./img/hs3.webp" class="image-trigger text-lg uppercase md:text-2xl">Laundry</li>
+                <li data-aos="fade-up" data-aos-delay="100" role="button" data-image="./img/hs4.webp" class="image-trigger text-lg uppercase md:text-2xl">Garage</li>
+                <li data-aos="fade-up" data-aos-delay="100" role="button" data-image="./img/hs5.webp" class="image-trigger text-lg uppercase md:text-2xl">Entertainment Center</li>
               </ul>
             </div>
 
-            <div class="slider relative w-full overflow-hidden">
-              <div class="absolute pointer-events-none left-0 top-1/2 -translate-y-1/2 z-10 flex w-full justify-between px-4 sm:px-10">
-                <button class="prev-slide pointer-events-auto group size-14 sm:size-20 xl:size-24" type="button" aria-label="Prev slide">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="text-[#C1C1C1] duration-300 group-hover:text-yellow-500" viewBox="0 0 99 100" fill="none">
-                    <circle cx="49.5" cy="49.9224" r="47" transform="rotate(-180 49.5 49.9224)" stroke="currentColor" stroke-width="5" />
-                    <path
-                      d="M26.9393 48.3617C26.3536 48.9475 26.3536 49.8972 26.9393 50.483L36.4853 60.029C37.0711 60.6147 38.0208 60.6147 38.6066 60.029C39.1924 59.4432 39.1924 58.4934 38.6066 57.9076L30.1213 49.4224L38.6066 40.9371C39.1924 40.3513 39.1924 39.4015 38.6066 38.8158C38.0208 38.23 37.0711 38.23 36.4853 38.8158L26.9393 48.3617ZM71 47.9224L28 47.9224L28 50.9224L71 50.9224L71 47.9224Z"
-                      fill="currentColor" />
-                  </svg>
-                </button>
-                <button class="next-slide pointer-events-auto group size-14 sm:size-20 xl:size-24" type="button" aria-label="Next slide">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="rotate-180 duration-300 group-hover:text-yellow-500" viewBox="0 0 99 100" fill="none">
-                    <circle cx="49.5" cy="49.9224" r="47" transform="rotate(-180 49.5 49.9224)" stroke="currentColor" stroke-width="5" />
-                    <path
-                      d="M26.9393 48.3617C26.3536 48.9475 26.3536 49.8972 26.9393 50.483L36.4853 60.029C37.0711 60.6147 38.0208 60.6147 38.6066 60.029C39.1924 59.4432 39.1924 58.4934 38.6066 57.9076L30.1213 49.4224L38.6066 40.9371C39.1924 40.3513 39.1924 39.4015 38.6066 38.8158C38.0208 38.23 37.0711 38.23 36.4853 38.8158L26.9393 48.3617ZM71 47.9224L28 47.9224L28 50.9224L71 50.9224L71 47.9224Z"
-                      fill="currentColor" />
-                  </svg>
-                </button>
-              </div>
-              <div class="slider-wrapper flex h-full w-full">
-                <div class="slider-slide h-full shrink-0">
-                  <img src="./img/img3.webp" alt="Image" class="size-full object-cover" />
-                </div>
-              </div>
+            <div class="aspect-video">
+              <img src="./img/img3.webp" alt="Image" class="main-image size-full object-cover" />
             </div>
           </div>
         </section>
@@ -252,12 +250,12 @@
         <section class="bg-grayDark pt-14 sm:pb-8 md:pt-28">
           <div class="container">
             <div class="flex flex-col items-center">
-              <h2 data-aos="fade-up"  class="text-gold mb-1 text-center font-contax text-4xl uppercase !leading-tight sm:text-5xl">More Than Just Closets</h2>
-              <p data-aos="fade-up"  class="mb-5 text-center text-lg sm:text-3xl">Tailored Organization Solutions for Every Room in Your Home</p>
+              <h2 data-aos="fade-up" class="text-gold mb-1 text-center font-contax text-4xl uppercase !leading-tight sm:text-5xl">More Than Just Closets</h2>
+              <p data-aos="fade-up" class="mb-5 text-center text-lg sm:text-3xl">Tailored Organization Solutions for Every Room in Your Home</p>
               <a
-              data-aos="fade-up" 
+                data-aos="fade-up"
                 href="#"
-                class="bg-gold group relative z-10 flex items-center justify-center gap-x-5 px-5  py-2 sm:py-4 duration-300 hover:shadow-lg hover:shadow-yellow-400/30 ">
+                class="bg-gold group relative z-10 flex items-center justify-center gap-x-5 px-5 py-2 duration-300 hover:shadow-lg hover:shadow-yellow-400/30 sm:py-4">
                 <svg class="hidden size-4 text-black duration-300 group-hover:translate-x-3 sm:block">
                   <use href="./sprites/sprite.svg#icon-arrow"></use>
                 </svg>
@@ -275,11 +273,11 @@
                 <img src="./img/img4.webp" alt="Key Features:" class="g-zoom-out size-full object-cover" />
               </div>
               <div class="border-y border-r border-grayLight px-8 py-10 max-lg:border-l sm:py-[60px] sm:pl-[63px] sm:pr-[48px] lg:w-1/2">
-                <h2 data-aos="fade-up"  class="text-gold mb-10 font-contax text-2xl uppercase !leading-tight sm:text-3xl">
+                <h2 data-aos="fade-up" class="text-gold mb-10 font-contax text-2xl uppercase !leading-tight sm:text-3xl">
                   We'll Move Forward <br />
                   When You're Ready
                 </h2>
-                <div data-aos="fade-up"  class="mb-8">
+                <div data-aos="fade-up" class="mb-8">
                   <h3 class="mb-2.5 font-contax text-xl uppercase !leading-tight">Our Process is Simple</h3>
                   <p>We design a storage solution that brings harmony to your home, tailored to your needs, aesthetic preferences, and budget.</p>
                 </div>
@@ -314,13 +312,14 @@
                   </li>
                 </ul>
                 <a
-                data-aos="fade-up" data-aos-delay="100"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
                   href="#"
-                  class="bg-gold group relative z-10 inline-flex items-center justify-center gap-x-5 px-5  py-2 sm:py-4 duration-300 hover:shadow-lg hover:shadow-yellow-400/30 ">
+                  class="bg-gold group relative z-10 inline-flex items-center justify-center gap-x-5 px-5 py-2 duration-300 hover:shadow-lg hover:shadow-yellow-400/30 sm:py-4">
                   <svg class="hidden size-4 text-black duration-300 group-hover:translate-x-3 sm:block">
                     <use href="./sprites/sprite.svg#icon-arrow"></use>
                   </svg>
-                  <span class="text-center text-lg uppercase !leading-tight  tracking-[2px] text-black sm:text-left sm:text-xl">GET STARTED</span>
+                  <span class="text-center text-lg uppercase !leading-tight tracking-[2px] text-black sm:text-left sm:text-xl">GET STARTED</span>
                 </a>
               </div>
             </div>
